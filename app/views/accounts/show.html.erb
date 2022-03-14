@@ -1,0 +1,408 @@
+
+<!-- component -->
+<div class="insta-clone">
+  <nav class="bg-white shadow px-48 border-b border-gray-400">
+    <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex px-2 lg:px-0">
+          <div class="flex-shrink-0 flex items-center">
+            <img
+              class="block lg:hidden h-8 w-auto"
+              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+              alt="Workflow logo"
+              />
+            <img
+              class="hidden lg:block h-8 w-auto"
+              src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+              alt="Workflow logo"
+              />
+          </div>
+        </div>
+        <div class="flex-1 flex items-center justify-center px-2 lg:ml-12">
+          <div class="max-w-lg w-full lg:max-w-xs">
+            <label for="search" class="sr-only">Search</label>
+            <div class="relative">
+              <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <svg class="h-5 w-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                    clip-rule="evenodd"
+                    />
+                </svg>
+              </div>
+              <input
+                id="search"
+                class="block w-full pl-10 pr-3 py-2 border border-gray-400 rounded-md leading-5 bg-gray-100 placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
+                placeholder="Search"
+                type="search"
+                />
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <div class="relative inline-block text-left">
+            <div>
+              <button type="button" class="bg-gray-100 rounded-full flex items-center text-gray-400 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                <span class="sr-only">Open options</span>
+                <!-- Heroicon name: solid/dots-vertical -->
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar icons-->
+        <div class="lg:ml-4 lg:flex lg:items-center">
+          <button
+            class="flex-shrink-0 p-1 border-transparent text-gray-700 rounded-full hover:text-gray-600 focus:outline-none focus:text-gray-600 transition duration-150 ease-in-out"
+            aria-label="Notifications">
+            <svg aria-label="Inicio" class="8-yf5" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M22 23h-6.001a1 1 0 01-1-1v-5.455a2.997 2.997 0 10-5.993 0V22a1 1 0 01-1 1H2a1 1 0 01-1-1V11.543a1.002 1.002 0 01.31-.724l10-9.543a1.001 1.001 0 011.38 0l10 9.543a1.002 1.002 0 01.31.724V22a1 1 0 01-1 1z"></path></svg>
+          </button>
+
+          <button
+            class="flex-shrink-0 p-1 border-transparent text-gray-700 rounded-full hover:text-gray-600 focus:outline-none focus:text-gray-600 transition duration-150 ease-in-out"
+            aria-label="Notifications">
+            <svg aria-label="Nueva publicación" class="8-yf5" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg>
+          </button>
+
+          <button
+            class="flex-shrink-0 p-1 border-transparent text-gray-700 rounded-full hover:text-gray-600 focus:outline-none focus:text-gray-600 transition duration-150 ease-in-out"
+            aria-label="Notifications">
+            <svg aria-label="Messenger" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.003 1.131a10.487 10.487 0 00-10.87 10.57 10.194 10.194 0 003.412 7.771l.054 1.78a1.67 1.67 0 002.342 1.476l1.935-.872a11.767 11.767 0 003.127.416 10.488 10.488 0 0010.87-10.57 10.487 10.487 0 00-10.87-10.57zm5.786 9.001l-2.566 3.983a1.577 1.577 0 01-2.278.42l-2.452-1.84a.63.63 0 00-.759.002l-2.556 2.049a.659.659 0 01-.96-.874L8.783 9.89a1.576 1.576 0 012.277-.42l2.453 1.84a.63.63 0 00.758-.003l2.556-2.05a.659.659 0 01.961.874z"></path></svg>
+          </button>
+
+          <button
+            class="flex-shrink-0 p-1 border-transparent text-gray-700 rounded-full hover:text-gray-600 focus:outline-none focus:text-gray-600 transition duration-150 ease-in-out"
+            aria-label="Notifications">
+            <svg aria-label="Feed de actividad" class="_8-yf5 " color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M16.792 3.904A4.989 4.989 0 0121.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 014.708-5.218 4.21 4.21 0 013.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 013.679-1.938m0-2a6.04 6.04 0 00-4.797 2.127 6.052 6.052 0 00-4.787-2.127A6.985 6.985 0 00.5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 003.518 3.018 2 2 0 002.174 0 45.263 45.263 0 003.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 00-6.708-7.218z"></path></svg>
+          </button>
+
+        </div>
+        <%= link_to "Logout", destroy_account_session_path, data: { "turbo-method": :delete }%>
+      </div>
+    </div>
+  </nav>
+
+  <!--body start-->
+  <!--profile data-->
+  <div class="bg-gray-100 h-auto px-48">
+    <div class="flex md:flex-row-reverse flex-wrap">
+      <div class="w-full md:w-3/4 p-4 text-center">
+        <div class="text-left pl-4 pt-3">
+
+          <span class="text-base text-gray-700 text-2xl mr-2"><%= @account.name %></span>
+
+          <span class="text-base font-semibold text-gray-700 mr-2">
+              <button
+                class="bg-transparent hover:bg-blue-500 text-gray-700 font-semibold hover:text-white py-2 px-4 border border-gray-600 hover:border-transparent rounded"
+              >Edit Profile</button>
+            </span>
+          <span class="text-base font-semibold text-gray-700">
+              <button
+                class="p-1 border-transparent text-gray-700 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
+                aria-label="Notifications"
+              >
+                <svg
+                  class="h-8 w-8"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                    />
+                  <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </button>
+            </span>
+
+        </div>
+
+        <div class="text-left pl-4 pt-3">
+            <span class="text-base text-gray-700 text-xl mr-2"><%= @account.user_name %></span>
+            <span class="text-base font-semibold text-gray-700 mr-2">
+              <b>220</b> posts
+            </span>
+          <span class="text-base font-semibold text-gray-700 mr-2">
+              <b>114</b> followers
+            </span>
+          <span class="text-base font-semibold text-gray-700">
+              <b>200</b> following
+            </span>
+        </div>
+
+        <div class="text-left pl-4 pt-3">
+          <span class="text-lg font-bold text-gray-700 mr-2"></span>
+        </div>
+
+        <div class="text-left pl-4 pt-3">
+          <p
+            class="text-base font-medium text-blue-700 mr-2"
+          >#graphicsdesigner #traveller #reader #blogger #digitalmarketer</p>
+          <p
+            class="text-base font-medium text-gray-700 mr-2"
+          >https://www.behance.net/hiravesona7855</p>
+        </div>
+      </div>
+
+      <div class="w-full md:w-1/4 p-4 text-center">
+        <div class="w-full relative md:w-3/4 text-center mt-8">
+          <button
+            class="flex rounded-full"
+            id="user-menu"
+            aria-label="User menu"
+            aria-haspopup="true"
+          >
+            <img
+              class="h-40 w-40 rounded-full"
+              src="https://scontent-muc2-1.cdninstagram.com/v/t51.2885-19/s150x150/58468664_291773768419326_7460980271920185344_n.jpg?_nc_ht=scontent-muc2-1.cdninstagram.com&amp;_nc_ohc=16Or2MWYINEAX9vLBW0&amp;oh=ada3818c35cb64180cf431d820d9dabe&amp;oe=5EF26035"
+              alt
+              />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--status show icon-->
+
+    <div class="inline-flex ml-36 mt-16">
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <div
+          class="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4"
+        >
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1502164980785-f8aa41d53611?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+            />
+        </div>
+        <h1 class="pt-16 text-base font-semibold text-gray-900">Fun</h1>
+      </div>
+
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <div
+          class="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4"
+        >
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1456415333674-42b11b9f5b7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+            />
+        </div>
+        <h1 class="pt-16 text-base font-semibold text-gray-900">Travel</h1>
+      </div>
+
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <div
+          class="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4"
+        >
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
+            />
+        </div>
+        <h1 class="pt-16 text-base font-semibold text-gray-900">Food</h1>
+      </div>
+
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <div
+          class="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4"
+        >
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1516834474-48c0abc2a902?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80"
+            />
+        </div>
+        <h1 class="pt-16 text-base font-semibold text-gray-900">Sketch</h1>
+      </div>
+
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <div
+          class="relative shadow-xl mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4"
+        >
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1444021465936-c6ca81d39b84?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+            />
+        </div>
+        <h1 class="pt-16 text-base font-semibold text-gray-900">My Work</h1>
+      </div>
+    </div>
+
+    <hr class="border-gray-500 mt-6" />
+    <hr class="border-gray-500 w-20 border-t-1 ml-64 border-gray-800" />
+
+    <!--post icon and title-->
+    <div class="flex flex-row mt-4 justify-center mr-16">
+      <div class="flex text-gray-700 text-center py-2 m-2 pr-5">
+        <div class="flex inline-flex">
+          <button
+            class="border-transparent text-gray-800 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
+            aria-label="Notifications"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
+                />
+            </svg>
+          </button>
+        </div>
+        <div class="flex inline-flex ml-2 mt-1">
+          <h3 class="text-sm font-bold text-gray-800 mr-2">POSTS</h3>
+        </div>
+      </div>
+
+      <div class="flex text-gray-700 text-center py-2 m-2 pr-5">
+        <div class="flex inline-flex">
+          <button
+            class="border-transparent text-gray-600 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
+            aria-label="Notifications"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+            </svg>
+          </button>
+        </div>
+        <div class="flex inline-flex ml-2 mt-1">
+          <h3 class="text-sm font-medium text-gray-700 mr-2">IGTV</h3>
+        </div>
+      </div>
+
+      <div class="flex text-gray-700 text-center py-2 m-2 pr-5">
+        <div class="flex inline-flex">
+          <button
+            class="border-transparent text-gray-600 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
+            aria-label="Notifications"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex inline-flex ml-2 mt-1">
+          <h3 class="text-sm font-medium text-gray-700 mr-2">SAVED</h3>
+        </div>
+      </div>
+
+      <div class="flex text-gray-700 text-center py-2 m-2 pr-5">
+        <div class="flex inline-flex">
+          <button
+            class="border-transparent text-gray-600 rounded-full hover:text-blue-600 focus:outline-none focus:text-gray-600"
+            aria-label="Notifications"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"
+                />
+            </svg>
+          </button>
+        </div>
+        <div class="flex inline-flex ml-2 mt-1">
+          <h3 class="text-sm font-medium text-gray-700 mr-2">TAGGED</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--post images-->
+
+    <div class="flex pt-4">
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+    </div>
+
+    <div class="flex pt-4">
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+    </div>
+
+    <div class="flex pt-4">
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+      <div class="flex-1 text-center px-4 py-2 m-2">
+        <img
+          class="w-full"
+          src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+          />
+      </div>
+    </div>
+  </div>
+</div>
