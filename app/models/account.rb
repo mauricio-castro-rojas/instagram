@@ -12,7 +12,7 @@ class Account < ApplicationRecord
   # returns an array of other users who the user has followed
   has_many :followings, through: :given_follows, source: :followed_account
 
-  has_many :posts
+  has_many :posts, dependent: :destroy
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
@@ -37,5 +37,8 @@ class Account < ApplicationRecord
       )
     end
   end
+
+  #validates :name, presence: true, uniqueness: true
+  #validates :user_name, presence: true
 
 end

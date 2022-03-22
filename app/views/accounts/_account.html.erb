@@ -1,0 +1,35 @@
+
+<div id="<%= dom_id account %>">
+  <% if account.avatar.attached? %>
+    <%= image_tag account.avatar.variant(:thumb) %>
+  <% else %>
+    <%= "/default_profile.jpg" %>
+  <% end %>
+  <p class="text-4xl text-slate-700">
+    Account Name: <%= account.name %>
+  </p>
+
+  <p class="text-2xl text-slate-500">
+    Account user name:
+    <%= account.user_name %>
+  </p>
+  <div class="mx-3 p-4 bg-blue-100">
+    <h2 class="text-3xl bg-blue-200 p-2">Posts</h2>
+    <% for post in account.posts %>
+      <ul class="ml-5 p-4">
+        <li>
+          <% if post.post_image.attached? %>
+            <%= link_to account_post_path(account, post) do %>
+              <%= image_tag post.post_image.variant(:thumb) %>
+            <% end %>
+          <% else %>
+            <%= "/default_profile.jpg" %>
+          <% end %>
+        </li>
+        <li><%= post.text %></li>
+      </ul>
+    <% end %>
+  </div>
+
+
+</div>

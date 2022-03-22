@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @post %>
+
+<div>
+    <%= link_to "Edit this post", edit_account_post_path(@account, @post) %> |
+    <%= link_to "Back to posts", account_posts_path(@account) %>
+    <%= button_to "Destroy this post", [@account, @post], data: {turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+</div>

@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/instagram.iml" filepath="$PROJECT_DIR$/.idea/instagram.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../rspec/.idea/rspec.iml" filepath="$PROJECT_DIR$/../rspec/.idea/rspec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sharkapp/.idea/sharkapp.iml" filepath="$PROJECT_DIR$/../sharkapp/.idea/sharkapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../stimulus-starter/.idea/stimulus-starter.iml" filepath="$PROJECT_DIR$/../stimulus-starter/.idea/stimulus-starter.iml" />
+      <module fileurl="file://$USER_HOME$/RubymineProjects/untitled/.idea/untitled.iml" filepath="$USER_HOME$/RubymineProjects/untitled/.idea/untitled.iml" />
     </modules>
   </component>
 </project>

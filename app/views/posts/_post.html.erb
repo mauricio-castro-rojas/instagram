@@ -1,0 +1,18 @@
+<div id="<%= dom_id post %>" >
+  <p> Post text:
+    <%= post.text %>
+  </p>
+
+  <div>
+    <% if post.post_image.attached? %>
+      <%= image_tag post.post_image %>
+    <% else %>
+      <%= "/default_profile.jpg" %>
+    <% end %>
+  </div>
+  <p>
+    <%= post.account.name %>
+  </p>
+
+
+</div>
