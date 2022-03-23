@@ -27,6 +27,7 @@ class PostsController < ApplicationController
 
   # POST /posts
   # POST /posts.json
+
   def create
     @post = @account.posts.build(post_params)
 
@@ -67,10 +68,14 @@ class PostsController < ApplicationController
 
   private
   def get_account
+    #@account = current_account
     @account = Account.find(params[:account_id])
   end
   # Use callbacks to share common setup or constraints between actions.
   def set_post
+    #unless @account.posts.include? params[:id]
+    #render :'accounts/error'
+    #end
     @post = @account.posts.find(params[:id])
   end
 

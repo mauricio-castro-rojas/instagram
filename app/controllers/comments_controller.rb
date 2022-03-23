@@ -1,19 +1,20 @@
 class CommentsController < ApplicationController
   before_action :get_post
-  before_action :set_comment, only: %i[ show edit update destroy ]
+  before_action :set_comment, only: %i[ update destroy ]
 
   # GET /comments or /comments.json
   def index
-    redirect_to post_path(@post)
+    @comment = @post.comments
+    #redirect_to post_path(@post)
   end
 
   # GET /comments/1 or /comments/1.json
   def show
+
   end
 
   # GET /comments/new
   def new
-    @comment = @post.comments.build
   end
 
   # GET /comments/1/edit
@@ -22,11 +23,10 @@ class CommentsController < ApplicationController
 
   # POST /comments or /comments.json
   def create
-    @comment = @post.comments.build(comment_params)
-
+    @comment = @post.comments.new(comment_params)
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to post_comments_path(@post), notice: "Comment was successfully created." }
+        format.html { redirect_to account_post_path(:id => @post.id), notice: "Comment was successfully created." }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -34,6 +34,20 @@ class CommentsController < ApplicationController
       end
     end
   end
+  #def create
+
+    #@comment = @post.comments.build(comment_params)
+
+    #respond_to do |format|
+      #if @comment.save
+        #format.html { redirect_to post_comments_path(@post), notice: "Comment was successfully created." }
+        #format.json { render :show, status: :created, location: @comment }
+        #else
+        #format.html { render :new, status: :unprocessable_entity }
+        #format.json { render json: @comment.errors, status: :unprocessable_entity }
+        #end
+      #end
+    #end
 
   # PATCH/PUT /comments/1 or /comments/1.json
   def update
@@ -60,15 +74,16 @@ class CommentsController < ApplicationController
 
   private
     def get_post
-      @post = @account.posts.find(params[:id])
+      @post = Post.find(params[:post_id])
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_comment
-      @comment = Comment.find(params[:id])
+      @comment = @post.comments.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
     def comment_params
-      params.require(:comment).permit(:text )
+      #debugger
+      params.require(:comment).permit(:text, :post_id, :account_id)
     end
 end

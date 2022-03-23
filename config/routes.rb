@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   #get "/accounts", to: "accounts#home"
   #get "/accounts/:id", to: "accounts#home"
   resources :accounts, except: [:index, :new] do
-    resources :posts
+    resources :posts do
+      resources :comments
+    end
   end
 
   # Defines the root path route ("/")

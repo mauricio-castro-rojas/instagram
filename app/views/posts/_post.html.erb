@@ -1,3 +1,4 @@
+
 <div id="<%= dom_id post %>" >
   <p> Post text:
     <%= post.text %>
@@ -14,5 +15,11 @@
     <%= post.account.name %>
   </p>
 
+  <h2 class="bg-blue-200 text-3xl p-3">Comments</h2>
+  <%= render partial: 'comments/comment', locals: { comments: post.comments }%>
+  <%#= render post.comments %>
+
+  <h2 class="bg-blue-200 text-3xl p-3">Add a comment:</h2>
+  <%= render 'comments/form' %>
 
 </div>
