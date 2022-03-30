@@ -1,3 +1,7 @@
+<p><%=account.id %></p>
+<p><%=current_account.id %></p>
+<p>Seguidores de<%=account.followers.count %></p>
+<p>Seguidos<%=account.followings.count %></p>
 
 <div id="<%= dom_id account %>">
   <% if account.avatar.attached? %>
@@ -5,11 +9,16 @@
   <% else %>
     <%= "/default_profile.jpg" %>
   <% end %>
-  <p class="text-4xl text-slate-700">
-    Account Name: <%= account.name %>
-  </p>
+  <div class="flex">
+    <p class="text-3xl text-slate-700 mr-2 p-2">
+      <%= account.name %>
+    </p>
+    <button class="<%=account.show_follow_button(account, current_account)%> mx-3 p-3 bg-sky-400 text-sm font-bold
+      text-white rounded-md" data-reflex="click->Account#follow" data-params="<%=account.id%>" data-current="<%=current_account.id%>">Seguir</button>
+  </div>
 
-  <p class="text-2xl text-slate-500">
+
+  <p class="text-xl text-slate-500">
     Account user name:
     <%= account.user_name %>
   </p>

@@ -1,12 +1,15 @@
 
 <p style="color: green"><%= notice %></p>
+<!--<p>Current account: <%#= current_account.id %></p>-->
+<!--<p>@account: <%#= @account.id %></p>-->
+<!--<p>Params id:<%#= params[:id] %> </p>-->
+
 
 <%= render @account %>
 
 <div class="text-slate-500 p-3">
   <%= link_to "Edit this account", edit_account_path(@account) %> |
   <%= link_to 'Add Post', new_account_post_path(@account) %> |
-  <%= link_to "Back to accounts", accounts_path %>
 
   <%= button_to "Destroy this account", @account, method: :delete %>
   <%= link_to "Logout", destroy_account_session_path, data: { "turbo-method": :delete }%>

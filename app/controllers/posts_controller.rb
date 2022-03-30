@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    #debugger
   end
 
   # GET /posts/new
@@ -33,7 +34,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to account_posts_path(@account), notice: 'Post was successfully created.' }
+        format.html { redirect_to account_posts_path(@account) }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }

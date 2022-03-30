@@ -26,7 +26,7 @@ class CommentsController < ApplicationController
     @comment = @post.comments.new(comment_params)
     respond_to do |format|
       if @comment.save
-        format.html { redirect_to account_post_path(:id => @post.id), notice: "Comment was successfully created." }
+        format.html { redirect_to account_post_path(:id => @post.id), anchor: 'submit' }
         format.json { render :show, status: :created, location: @comment }
       else
         format.html { render :new, status: :unprocessable_entity }

@@ -1,14 +1,14 @@
 class AccountsController < ApplicationController
   before_action :authenticate_account!
-  before_action :set_account, only: %i[ show edit update destroy ]
+  before_action :set_account, only: %i[ edit update destroy ]
 
   # GET /sharks or /sharks.json
   def index
-    @accounts = Account.all
   end
 
   # GET /sharks/1 or /sharks/1.json
   def show
+    @account = Account.find(params[:id])
   end
 
   # GET /sharks/new
@@ -61,11 +61,7 @@ class AccountsController < ApplicationController
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_account
-    if account_signed_in?
-      @account = current_account
-    else
-      redirect_to new_account_session_path
-    end
+    @account = current_account
   end
 
   # Only allow a list of trusted parameters through.

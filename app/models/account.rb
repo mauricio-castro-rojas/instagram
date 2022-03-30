@@ -24,6 +24,16 @@ class Account < ApplicationRecord
     attachable.variant :thumb, resize_to_limit: [190, 190]
   end
 
+  def show_follow_button(account, current_account)
+    p account.id
+    p current_account.id
+    if account.id == current_account.id
+      "hidden"
+    else
+      ""
+    end
+  end
+
   private
   def add_default_avatar
     unless avatar.attached?

@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/index'
   resources :comments
-  devise_for :accounts, :controllers => { :registrations => :registrations}
+  devise_for :accounts, :controllers => { :registrations => :registrations }
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
